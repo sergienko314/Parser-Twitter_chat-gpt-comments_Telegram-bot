@@ -16,4 +16,4 @@ To run the project, you will need to specify the following data in the ENV file.
 To run the project, type npm run dev or npm start at the command line.
 Please note that various settings for the puppeteer can be used to trigger the parsing function: usually headless=false for the computer; For server headless=true
 
-the logic for updating the constant updating of posts is written in a separate repository https://github.com/sergienko314/Twitter_Telegram_bot_updateFu
+the logic for updating the constant updating of posts is written in a separate repository https://github.com/sergienko314/parser-Twitter_update-logic.git

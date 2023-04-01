@@ -2,7 +2,7 @@ const bot = require("../../telegramBot");
 
 const sendMessagePopular = async (chatId) => {
   const popularArray = [
-    { nikName: "@financialjuice ", name: "Breaking Market News" },
+    { nikName: "@financialjuice", name: "Breaking Market News" },
     { nikName: "@JoeBiden", name: "Joe Biden" },
     { nikName: "@elonmusk", name: "Elon Musk" },
     { nikName: "@Tesla", name: "Tesla" },

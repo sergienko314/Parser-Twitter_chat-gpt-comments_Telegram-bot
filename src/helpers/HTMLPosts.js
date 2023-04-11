@@ -20,7 +20,11 @@ const HTMLPosts = (twitt, mods) => {
   }${twitt.text ? `🇺🇲 : ${twitt.text}\n\n` : ""}${
     twitt.textUA ? `🇺🇦 : ${twitt.textUA}\n\n` : ""
   }${
-    twitt.haveRepost
+    twitt.haveRepost &&
+    (twitt.repost?.repostText ||
+      twitt.repost?.repostVideo ||
+      twitt.repost?.repostImg ||
+      twitt.repost?.repostText)
       ? `<pre>🪪 Зробив репост</pre> <b>${twitt.repost?.repostName}</b> ${
           twitt.repost?.repostVerification ? "✪" : ""
         } <a href=\"${twitt.link}\">${twitt.repost?.repostNikName}</a>\n\n`
